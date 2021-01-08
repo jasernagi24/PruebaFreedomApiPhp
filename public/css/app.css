@@ -1,0 +1,14 @@
+.table-responsive {
+    overflow-x: visible;
+    overflow-y: scroll;
+    border-radius: 10px;
+    float: left;
+    margin-left: 1%;
+    height: 70%;
+    width: 50%;
+  }
+  
+  .table{
+      width: 100%;
+  }
+
