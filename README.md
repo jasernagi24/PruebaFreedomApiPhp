@@ -7,6 +7,34 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+Inicio de proyecto
+Ete proyecto inicia desde el servidor local por defecto, asi que utilizar el comando correspondiente(php artisan serve) o (php artisan serve --port=8000). Al correr este cargara las migraciones correspondientes para generar las tablas que se realizaron a la base de datos.
+
+Este proyecto se trabajo con una base de datos mysql, La conexion a la base de datos esta configurada en el archivo .env, esta configuracion es la siguiente:
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=pruebacorral
+DB_USERNAME=root
+DB_PASSWORD=root
+
+Tenga en cuenta que esta configuracion puede ser cambiada si lo necesita.
+
+El proyecto tiene 5 migratciones, 3 de ellas vienen por defecto al crear el proyecto en laravel en la cual tiene un modelo de usuarios, por ahora no se haran uso de estas migraciones.
+
+Hay un total de 2 migraciones en las cuales son las necesarias para crear las 2 tablas que se usaran en el proyecto de la prueba:
+
+2021_01_07_162205_create_table_corrales.php
+2021_01_07_162537_create_table_animales.php
+
+En la carpeta app/Http/controllers estan los archivos controladores que seran los encargados de tener las funciones con ayuda de eloquent ORM que realizaran las peticiones a la base de datos.
+
+En el archivo routes/api.php se encuentran las diferentes rutas en las cuales se utilizara la api, un ejemplo seria: 
+
+http://localhost:8000/api/corral -> Esta funciona con el metodo get
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
