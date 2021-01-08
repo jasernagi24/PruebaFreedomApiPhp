@@ -10,7 +10,7 @@
 Inicio de proyecto
 Ete proyecto inicia desde el servidor local por defecto, asi que utilizar el comando correspondiente(php artisan serve) o (php artisan serve --port=8000). 
 
-Este proyecto se trabajo con una base de datos mysql, La conexion a la base de datos esta configurada en el archivo .env, esta configuracion es la siguiente:
+Este proyecto se trabajo con una base de datos relacional mysql, La conexion a la base de datos esta configurada en el archivo .env, esta configuracion es la siguiente:
 
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
