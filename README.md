@@ -8,7 +8,7 @@
 </p>
 
 Inicio de proyecto
-Ete proyecto inicia desde el servidor local por defecto, asi que utilizar el comando correspondiente(php artisan serve) o (php artisan serve --port=8000). Al correr este cargara las migraciones correspondientes para generar las tablas que se realizaron a la base de datos.
+Ete proyecto inicia desde el servidor local por defecto, asi que utilizar el comando correspondiente(php artisan serve) o (php artisan serve --port=8000). 
 
 Este proyecto se trabajo con una base de datos mysql, La conexion a la base de datos esta configurada en el archivo .env, esta configuracion es la siguiente:
 
@@ -20,6 +20,8 @@ DB_USERNAME=root
 DB_PASSWORD=root
 
 Tenga en cuenta que esta configuracion puede ser cambiada si lo necesita.
+
+Al correr el comando (php artisan migrate) cargara las migraciones correspondientes para generar las tablas que se realizaron a la base de datos.
 
 El proyecto tiene 5 migratciones, 3 de ellas vienen por defecto al crear el proyecto en laravel en la cual tiene un modelo de usuarios, por ahora no se haran uso de estas migraciones.
 
