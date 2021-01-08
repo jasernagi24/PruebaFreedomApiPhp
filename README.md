@@ -30,6 +30,8 @@ Hay un total de 2 migraciones en las cuales son las necesarias para crear las 2 
 2021_01_07_162205_create_table_corrales.php
 2021_01_07_162537_create_table_animales.php
 
+Para correr los seeders y asi poder realizar pruebas debe ejecurtar el comando (php artisan db:seed)
+
 En la carpeta app/Http/controllers estan los archivos controladores que seran los encargados de tener las funciones con ayuda de eloquent ORM que realizaran las peticiones a la base de datos.
 
 En el archivo routes/api.php se encuentran las diferentes rutas en las cuales se utilizara la api, un ejemplo seria: 
